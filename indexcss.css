@@ -1,0 +1,849 @@
+		@keyframes menushow
+	{
+  0% {right:165;opacity:0;}
+  10%{right:167px;opacity:0.1;}
+  20%{right:172px;opacity:0.2;}
+  30%{right:177px;opacity:0.3;}
+  40%{right:182px;opacity:0.4;}
+  50%{right:187px;opacity:0.5;}
+  60%{right:192px;opacity:0.6;}
+	70%{right:197px;opacity:0.7;}
+	80%{right:202px;opacity:0.8;}
+	90%{right:207px;opacity:0.9;}
+	100%{right:212px;opacity:1;}
+}
+@keyframes menushow2
+	{
+  0% {top:-25;opacity:0;}
+  20%{top:-20;opacity:0.2;}
+  40%{top:-15;opacity:0.4;}
+  60%{top:-10;opacity:0.6;}
+	80%{top:-5;opacity:0.8;}
+	100%{top:-0;opacity:1;}
+}
+body
+{
+	padding: 0;
+	margin: 0;
+}
+#header_box
+{
+width:100%;
+height:110px;
+border-bottom:0.5px solid silver;
+position:fixed;
+background-color:white;
+z-index:9999;
+
+}
+#logoimg
+{
+width:6cm;
+height:2.52cm;
+float:right;
+margin-top:5px;
+}
+#progromicon
+{
+padding:10px 30px;
+background-color:#47aecd;
+border-radius:27.5px;
+position:relative;
+top:37.5px;
+left:30px;
+color:white;
+font-family:homa;
+
+}
+a
+{
+text-decoration:none;
+color:#757574;
+}
+#menuul
+{
+width:750px;
+height:70px;
+/*border:1px solid black;*/
+float:right;
+margin-top:20px;
+margin-right:20px;
+}
+
+#li4
+{
+	list-style:none;
+	float:right;
+	width:160px;
+	height:90px;
+	line-height:70px;
+	text-align:center;
+	margin-right:10px;
+	font-family:AdobeArabic;
+	font-size:18pt;
+	color:#757574;
+	cursor:pointer;
+}
+#ul21
+{
+	display:none;
+}
+#li2:hover #ul21
+{
+	display:block;
+
+}
+#ul31
+{
+	display:none;
+}
+#li3:hover #ul31
+{
+	display:block;
+
+}
+#li1,#li5
+{
+	width:110px;
+	list-style:none;
+	float:right;
+	height:90px;
+	line-height:70px;
+	text-align:center;
+	margin-right:10px;
+	font-family:AdobeArabic;
+	font-size:18pt;
+	color:#757574;
+	cursor:pointer;
+}
+
+#li2,#li3
+{
+	list-style-image:url("images/pointericon.png");
+	list-style-position: inside;
+	float:right;
+	width:160px;
+	height:90px;
+	line-height:70px;
+	text-align:center;
+	margin-right:10px;
+	font-family:AdobeArabic;
+	font-size:18pt;
+	color:#757574;
+	cursor:pointer;
+}
+#ul21>li:hover,#ul211>li:hover,#ul221>li:hover,#ul31>li:hover
+{
+	background-color:#f3f3f3;
+}
+#ul21,#ul31
+{
+	z-index:1;
+		position:relative;
+	top:21px;
+left:-37;
+
+}
+#li21:hover #ul211
+{
+	display:block;
+}
+#li22:hover #ul221
+{
+	display:block;
+}
+#li35:hover #ul351
+{
+	display:block;
+}
+#li21,#li22,#li35
+{
+	list-style-image: url("images/verticalpointericon.png");
+	list-style-position: inside;
+	line-height: 40px;
+	height:40px;
+	width:170px;
+	background-color:white;
+	z-index:1;
+	border-top:3px solid #47aecd;
+	border-radius: 12px;
+		position:relative;
+		animation-name:menushow2;
+	animation-duration:0.1s;
+}
+#li23,#li31,#li32,#li33,#li34,#li36
+{
+	line-height: 40px;
+	height:40px;
+	width:170px;
+	background-color:white;
+	z-index:1;
+	border-top:3px solid #47aecd;
+	border-radius: 12px;
+	list-style:none;
+	position:relative;
+		animation-name:menushow2;
+	animation-duration:0.1s;
+}
+#ul211,#ul221,#ul351
+{
+	display:none;
+	position:relative;
+	right:212px;
+	top:-43px;
+	animation-name:menushow;
+	animation-duration:0.2s;
+}
+#li211,#li212,#li213,#li214,#li221,#li222,#li351
+{
+	line-height: 40px;
+	height:40px;
+	width:170px;
+	background-color:white;
+	z-index:1;
+	border-top:3px solid #47aecd;
+	border-radius: 12px;
+	list-style:none;
+}
+
+
+#p1
+{
+	font-size:40pt;
+	font-family:zohoor;
+	direction:rtl;
+
+	font-weight:bold;
+	color:#d8d8d8;
+	text-align:center;
+	letter-spacing:2px;
+}
+#nobat
+{
+	padding:12px 35px;
+	background-color:#47aecd;
+	border-radius:25.5px;
+	text-align:center;
+	color:white;
+	float:right;
+	font-family:homa;
+	font-size:17pt;
+	margin-right:85px;
+	opacity:1 !important;
+}
+
+#maskdiv
+{
+	width:100%;
+	background-color:black;
+	opacity:0.6;
+	height:750px;
+	position:relative;
+	z-index:0;
+	float:right;
+}
+
+#videodiv
+{
+	width:100%;
+	height:750px;
+	background-image:url("videos/original.gif");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-color:black;
+	float:right;
+	margin-top:110px;
+	position:relative;
+	z-index:-1;
+}
+
+#videodivin
+{
+	border:1px solid black;
+	width:450px;
+	height:350px;
+	margin:200 auto 0;
+}
+#aboutdiv
+{
+	width:100%;
+	z-index:1;
+	height:670px;
+	background-color:white;
+	//border:1px solid black;
+	float:right;
+	//background-color:#e5e5e5;
+}
+#abouttitr
+{
+	text-align:center;
+	font-family:homa;
+	font-size:22pt;
+	margin-top:30px;
+	color:#262626;
+}
+#aboutdivin
+{
+	//border:2px solid red;
+	width:1100px;
+	height:370px;
+
+	margin:50px auto 0;
+
+}
+
+#hr1
+{
+
+	width:63px;
+	height:4px;
+	border-width:0px;
+	background-color:#47aecd;
+	display:black;
+	margin-top:60px;
+}
+#doctorimg
+{
+	float:right;
+	width:10cm;
+	height:14.52cm;
+	//margin-left:50px;
+	margin-top:-50px;
+	position:relative;
+	z-index:1;
+}
+#doctorname
+{
+	font-family:zohoor;
+	color:#47aecd;
+	font-size:28pt;
+	direction:rtl;
+	margin:5px 10px;
+	
+}
+#aboutp
+{
+	font-size:19pt;
+	font-family:nazanin;
+	direction:rtl;
+	margin:5px 10px 0px 10px;
+	position:relative;
+	z-index:1;
+}
+#blurdiv
+{
+	width:100%;
+	height:600px;
+	background-image:url('images/blurbackground2.jpg');
+
+	float:right;
+//	background-attachment:fixed;
+	z-index:-10;
+	background-position:center;
+		background-size:cover;
+
+
+}
+#blurdivin
+{
+
+	width:600px;
+	height:500px;
+	margin:110px auto 0px;
+	//border:1px solid black;
+	opacity:0.9;
+	z-index:-10;
+}
+#blurdivinp
+{
+	font-family:nazanin;
+	direction:rtl;
+	font-size:25pt;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	text-shadow: 1px 0px black;
+	z-index:-10;
+
+}
+#patientdiv
+{
+	width:100%;
+	height:700px;
+
+	float:right;
+}
+#hr2
+{
+
+	width:63px;
+	height:4px;
+	border-width:0px;
+	background-color:#47aecd;
+	display:black;
+	margin-top:80px;
+}
+#patienttitr
+{
+	text-align:center;
+	font-family:homa;
+	font-size:22pt;
+	margin-top:20px;
+	color:#262626;
+}
+#patientdivin
+{
+width:1200px;
+height:448px;
+margin:0 auto 0;
+
+}
+#patientdivin1,#patientdivin2,#patientdivin3
+{
+width:396px;
+height:448px;
+float:right;
+
+	border:2px solid white;
+transition: background-color .5s,border-color .5s ease-out;
+}
+#patientdivin1:hover,#patientdivin2:hover,#patientdivin3:hover
+{
+	background-color: #F5F5F5;
+	border:2px solid #3087b6;
+
+}
+#patienttimg
+{
+	width:50%;
+	height:40%;
+	margin-left:100px;
+	margin-top:50px;
+}
+#medicalhistory,#consentforms,#finansing
+{
+	color:#3087b6;
+font-family:nazanin;
+text-align: center;
+}
+#medicalhistoryp,#consentformsp,#finansingp
+{
+	font-family:nazanin;
+text-align: center;
+font-size:18pt;
+direction:rtl;
+color:black;
+}
+#servises
+{
+	width:100%;
+	height:1150px;
+	background-color:silver;
+	float:right;
+}
+#servisesin
+{
+	width:100%;
+	heght:100%;
+}
+#filings
+{
+	width: 50%;
+	float:right;
+	height:600px;
+	background-image: url('images/fillingsimg3.jpg');
+	background-position: center;
+	background-size: cover;
+		opacity: 1;
+	transition: opacity 0.5s,background-image 0.5s;
+}
+#filings:hover
+{
+	background-image: url('images/fillingsimg4.jpg');
+	opacity:0.8;
+}
+#cerec
+{
+	width: 50%;
+	float:right;
+	height:600px;
+	background-image: url('images/cereccreownsimg.jpg');
+	background-position: center;
+	background-size: cover;
+	transition: opacity 0.5s,background-image 0.5s;
+
+}
+#cerec:hover
+{
+	background-image: url('images/cereccreownsimg2.jpg');
+	opacity:0.8;
+}
+
+#implants
+{
+	width:33.33%;
+	float:right;
+	height:550px;
+	background-image: url('images/dentalimplantsimg.jpg');
+	background-position: center;
+	background-size: cover;
+	transition: opacity 0.5s,background-image 0.5s;
+}
+#implants:hover
+{
+	background-image: url('images/dentalimplantsimg2.jpg');
+	opacity:0.8;
+}
+
+#dentistry
+{
+	width: 33.33%;
+	float:right;
+	height:550px;
+	background-image: url('images/sedationdentistryimg.jpg');
+	background-position: center;
+	background-size: cover;
+	transition: opacity 0.5s,background-image 0.5s;
+}
+#dentistry:hover
+{
+	background-image: url('images/sedationdentistryimg2.jpg');
+	opacity:0.8;
+}
+#periodontal
+{
+	width: 33.33%;
+	float:right;
+	height:550px;
+	background-image: url('images/periodontalcare.jpg');
+	background-position: center;
+	background-size: cover;
+	transition: opacity 0.5s,background-image 0.5s;
+}
+#periodontal:hover
+{
+	background-image: url('images/periodontalcare2.jpg');
+	opacity:0.8;
+}
+#servisestext
+{
+	font-family: nazanin;
+	font-size: 30pt;
+	text-align: center;
+	color: white;
+	direction: rtl;
+	margin-top: 270px;
+	opacity: 1 !important;
+	font-weight: bold;
+}
+#locationdiv
+{
+	width:100%;
+	height:870px;
+	background-color: #f7f7f7;
+	float:right;
+
+}
+#locationdivin
+{
+	width:1200px;
+	height:500px;
+	padding: 0;
+	margin:100 auto 0;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: box-shadow 0.25s;
+}
+#locationdivin:hover
+{
+	  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 9px 23px 0 rgba(0, 0, 0, 0.4);
+}
+#locationimg
+{
+	width:50%;
+	height:100%;
+	float:left;
+}
+#locationdivinin
+{
+	width:50%;
+	height:100%;
+	float:left;
+	background-color:#3087b6;
+	
+}
+#locationtitr
+{
+	text-align: center;
+	margin-top: 150px;
+	font-family: nazanin;
+	font-size: 50pt;
+	color:white;
+	padding: 0;
+	margin-bottom: 0;
+}
+#adresstext
+{
+	text-align: center;
+	margin: -10px;
+	font-family: nazanin;
+	font-size: 20pt;
+	color:#D7D7D7;	
+}
+#locationlink
+{
+	text-align: center;
+	padding: 20px 70px;
+	background-color: white;
+	border-radius: 25px;
+	font-size: 18pt;
+	font-family: nazanin;
+	color:#3087b6;
+	font-weight: 800;
+	float: left;
+	margin-left:160px;
+margin-top: 30px;
+	
+}
+#contactus
+{
+		width:100%;
+	height:970px;
+	background-image: url("images/contact.jpg");
+	background-size: cover;
+	float:right;
+}
+#formdiv
+{
+	width:500px;
+	height:800px;
+
+	margin: 150 auto 0;
+}
+#nameinput,#phoninput,#emailinput
+{
+	width:500px;
+	height:80px;
+	direction: rtl;
+	display: inline;
+	background-color:white;
+	opacity: 0.4;
+	margin-top:-5px;
+	font-family: nazanin;
+	text-indent: 10px;
+	font-size:25pt;
+	border:3px solid #47aecd;
+	transition: background-color 0.25s,opacity 0.25s;
+	
+}
+#nameinput:focus,#phoninput:focus,#emailinput:focus
+{
+	opacity: 1;
+	background-color: lightblue;
+}
+#nametitle,#phontitle,#emailtitle
+{
+	font-size: 20pt;
+	float:right;
+	direction: rtl;
+	color:white;
+	font-family:nazanin;
+	display: inline;
+	margin: 10px 10px 10px 0px;
+	visibility: hidden;
+	
+}
+#contacttextarea
+{
+	width: 100%;		
+	background-color:white;
+	opacity: 0.4;
+	margin-top:60px;
+	font-family: nazanin;
+	font-size:25pt;
+	direction: rtl;
+	transition: background-color 0.25s,opacity 0.25s;
+	border:3px solid #47aecd;
+	
+}
+#contacttextarea:focus
+{
+		opacity: 1;
+	background-color: lightblue;
+	
+}
+#contactsubmit
+{
+	margin-left:150px;
+	margin-top: 50px;
+	text-align: center;
+	width:200px;
+	height:60px;
+	background-color: #47aecd;
+	border: 1px solid white;
+	font-size:18pt;
+	font-family: nazanin;
+	color: white;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+@media screen and (max-width:1300px) and (min-width:920px)
+{
+	#menuul
+	{
+		display: none;
+	}
+
+	#patientdivin
+	{
+		width:802px;
+		height:904px;
+	}
+	#patientdiv
+	{
+		height:1200px
+	}
+	#locationdiv
+	{
+		height:1100px;
+	}
+	#locationdivin
+	{
+		width:610px;
+		height:700px;
+		
+	}
+	#locationimg
+	{
+		width:100%;
+		height: 450px;
+	}
+	#locationdivinin
+	{
+		width:100%;
+		height:300px;
+	}
+	#locationtitr
+	{
+		margin-top:40px;
+	}
+	#doctorname
+	{
+		margin-top:-45px;
+	}
+	#aboutdivin
+	{
+	width:100%;
+	}
+}
+@media screen and (max-width:920px) and (min-width:400px)
+{
+		#menuul
+	{
+		display: none;
+	}
+		#patientdivin
+	{
+		width:396px;
+		height:1357px;
+	}
+		#patientdiv
+	{
+		height:1600px
+	}
+	#locationdiv
+	{
+		height:1100px;
+	}
+	#locationdivin
+	{
+		width:400px;
+		height:650px;
+		
+	}
+	#locationimg
+	{
+		width:100%;
+		height: 350px;
+	}
+	#locationdivinin
+	{
+		width:100%;
+		height:300px;
+	}
+	#locationtitr
+	{
+		margin-top:40px;
+	}
+	#doctorname
+	{
+		margin-top:-45px;
+	}
+	#locationlink
+	{
+	margin-left:60px;
+	margin-top: 35px;
+
+	}
+	#aboutdivin
+	{
+	width:100%;
+	}
+	#doctorimg
+	{
+		display: none;
+	}
+	#aboutdiv
+	{
+		height:880px;
+	}
+	#blurdivinp
+	{
+		font-size: 20pt;
+	}
+	#blurdivin
+	{
+		width:400px;
+		height:470px;
+	}
+	#contactform
+	{
+		width:380px;
+	}
+	#nameinput,#phoninput,#emailinput
+	{
+		width:380px;
+	}
+	#formdiv
+	{
+		width:380px;
+	}
+	#contactsubmit
+	{
+		margin-left:90px;
+	}
+	#servises
+	{
+		height:2300px;
+	}
+	#cerec
+	{
+		width:100%;
+	}
+	#filings
+	{
+		width:100%;
+	}
+	#implants
+	{
+		width:50%;
+	}
+	#dentistry
+	{
+		width:50%;
+	}
+	#periodontal
+	{
+		width:100%;
+	}
+}
